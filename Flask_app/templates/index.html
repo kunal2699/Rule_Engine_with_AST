@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <h1>Rule Engine</h1>
+    <h2>Create Rule</h2>
+    <input type="text" id="rule" placeholder="Enter rule string" style="width: 400px;">
+    <button onclick="createRule()">Create Rule</button>
+    <p id="result"></p>
+
+    <h2>Evaluate Rule</h2>
+    <input type="text" id="rule_id" placeholder="Enter rule ID" style="width: 200px;">
+    <input type="number" id="age" placeholder="Age" style="width: 100px;">
+    <input type="text" id="department" placeholder="Department" style="width: 150px;">
+    <input type="number" id="salary" placeholder="Salary" style="width: 100px;">
+    <input type="number" id="experience" placeholder="Experience (years)" style="width: 150px;">
+    <button onclick="evaluateRule()">Evaluate</button>
+    <p id="evaluation_result"></p>
+</body>
+</html>
